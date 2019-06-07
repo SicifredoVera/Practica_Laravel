@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+Route::get ('ingresar', 'Control_Persona@ingresar');
+Route::get ('mostrar', 'Control_Persona@mostrar');
