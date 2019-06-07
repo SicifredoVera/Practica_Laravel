@@ -11,8 +11,12 @@
     </center>
 
 <div class="container">
-<form action="index.php" method="post">
+<form action="{{url('/mostrar')}}" method="post" accept-charset="utf-8">
+
+    {{csrf_field() }}
+
 		<div class="col-sm-10">
+    
 	<label>Nombre</label>
 <input type="text" name="nombre" value="" autocomplete="off" >
 </div>

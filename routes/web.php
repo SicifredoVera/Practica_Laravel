@@ -17,5 +17,6 @@ Route::get('/', function () {
 
 
 
-Route::get ('ingresar', 'Control_Persona@ingresar');
-Route::get ('mostrar', 'Control_Persona@mostrar');
+Route::get ('/ingresar', 'Control_Persona@ingresar');
+Route::get ('/mostrar', 'Control_Persona@mostrar');
+Route::post('mostrar','Control_Persona@ingresar2' );
